@@ -1,5 +1,4 @@
 import  styles  from './Home.module.css'
-import stylesFeature from '../../components/features/styles.module.css'
 import imgTitle from '../../assets/img/img-title.jpg' 
 import { features } from '../../helpers/Feature' 
 import {GridFeatures} from '../../components/features'
@@ -7,6 +6,8 @@ import { Buttom } from '../../components/buttom'
 
 
 export const Home = () => {
+
+
 
      return(
           <div className={styles.body}>

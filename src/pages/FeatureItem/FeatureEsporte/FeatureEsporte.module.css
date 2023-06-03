@@ -1,0 +1,47 @@
+main {
+     max-width: 100vw;
+     height: 100vh;
+     font-family: Roboto Slab, 'Gill Sans', sans-serif;
+}    
+header {
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 20px;
+     font-size: 21px;
+     font-weight: 300;
+}
+.logo {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: black;
+}
+.nav span {
+     padding: 25px;
+}
+header button{
+     padding: 10px;
+     background-color: #a80359;
+     border: 1px solid #333;
+     border-radius: 5px;
+     font-size: 13px;
+     color: #FFF;
+}
+header button:hover {
+     background: linear-gradient(to bottom, #a80359 , rgb(240, 116, 116) );
+     cursor: pointer;
+}
+
+
+
+
+.img {
+     width: 200px;
+     height: 230px;
+     background-image: url(../../../../public/pexels-nadi-lindsay-3078831.jpg);
+     background-size: cover;
+     background-position: center;
+     border-radius: 70px;
+}
