@@ -3,32 +3,29 @@ import imgTitle from '../../assets/img/img-title.jpg'
 import { features } from '../../helpers/Feature' 
 import {GridFeatures} from '../../components/features'
 import { Buttom } from '../../components/buttom'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Home = () => {
+     const navigate = useNavigate()
 
-
+     const handleClickContactUs = () => {
+          navigate('/contactus')
+     }
 
      return(
-          <div className={styles.body}>
-               <div className={styles.circle}></div>       
-               <main className={styles.main}>
-                    <div className={styles.title}>
-                         <div className={styles.initialInfo}>
-                         <h1>Descubra Mais Sobre Você </h1>
-                         <h3>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock </h3>
-                         <Buttom txt="Contact Us" />
-                         </div>
-                         <img src={imgTitle} alt="" />
-                    </div>
-                    <div className={styles.features}>
+          <main className={styles.mainHome}>
+               <article className={styles.BodyMain}>
+                    <h1 className={styles.h1Home}>Conheça nossos Produtos</h1>
+                    <div className={styles.itemArea}>
                          {features.map((item, index) => (
                               <GridFeatures key={index} item={item}/>
                          ))
                          }
                     </div>
-               </main>
-          </div>
+                    <Buttom txt='Contact Us' bgAndTxtColor='#def7ff/#000' onClick={handleClickContactUs} />
+               </article>
+          </main>
      )
 }
 

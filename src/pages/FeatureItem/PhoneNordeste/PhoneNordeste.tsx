@@ -1,18 +1,21 @@
-import  styles  from './FeatureSonho.module.css'
+import  styles  from './PhoneNordeste.module.css'
 
-import imgDream from '../../../../public/pexels-nadi-lindsay-3078831.jpg'
 import { Logo } from '../../../components/logoSvg/logo'
 import { Buttom } from '../../../components/buttom';
 import { useNavigate } from 'react-router-dom';
 
 const show:boolean = true;
 
-export const FeatureSonho = () => {
+export const PhoneNordeste = () => {
      const navigate = useNavigate()
 
-     const handlerClick = () => {
+     const handlerSeeMore = () => {
           navigate('/');
      }
+     const handlerContactUs = () => {
+          navigate('/contactus')
+     }
+
 
      return (
           <main className={styles.main}>
@@ -34,7 +37,8 @@ export const FeatureSonho = () => {
                                    earum aspernatur nulla! Ipsa ea quis laboriosam voluptate.</p>
                          </div>
                          <div className={styles.buttonArea}>
-                              <Buttom txt='Ver mais' onClick={handlerClick} />
+                              <Buttom txt='Ver mais' onClick={handlerSeeMore} bgAndTxtColor='#fff/#000' />
+                              <Buttom txt='Contact Us' onClick={handlerContactUs} bgAndTxtColor='#0cb7f2/#fff' />
                          </div>
                     </div>
                     <img className={styles.photoArea} src='../../../../public/screen.png'/>

@@ -1,6 +1,6 @@
-import imgFeactureOne from '../assets/img/feature1.jpg'
-import imgFeactureTwo from '../assets/img/feature2.jpg'
-import imgFeactureThree from '../assets/img/feature3.jpg'
+import imgFeactureOne from '../assets/img/phone-nordeste.jpg'
+import imgFeactureTwo from '../assets/img/notebook-nordeste.jpg'
+import imgFeactureThree from '../assets/img/celular-nordeste.jpg'
 
 export type Feature = {
      title: string;
@@ -10,7 +10,7 @@ export type Feature = {
 } 
 
 export const features: Feature[] = [
-     {title: 'Estrutura e papel dos sonhos', description: 'Sonhos vista pela Psicologia', image: imgFeactureOne, link: 'Estrutura-e-papel-dos-sonhos'},
+     {title: 'Nordeste A64', description: 'Melhor fone de ouvido do mercado', image: imgFeactureOne, link: 'phone-nordeste'},
      {title: 'Psicologia do esporte', description: 'Curso destinado a psicologia aplicada no esporte', image: imgFeactureTwo, link: 'Psicologia-do-esporte'},
      {title: 'Inconsciente coletivo e arquétipo', description: 'Vamos falar sobre Inconsciente', image: imgFeactureThree, link: 'Inconsciente-coletivo-e-arquétipo'},
 ]

@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-import { features } from '../../helpers/Feature' 
 import {Feature} from '../../helpers/Feature'
 import { useNavigate } from 'react-router-dom';
 
@@ -16,10 +15,10 @@ export const GridFeatures = ({item}: Props) => {
      }
 
      return(
-          <div className={styles.featurePage} onClick={handleClick}>
-               <div className={styles.info}></div>    
-               <h3>{item.title}</h3>
-               <img src={item.image} alt="" />
+          <div className={styles.itemInfo} onClick={handleClick}>
+               <img className={styles.imgItem} src={item.image} alt="" />
+               <h4 className={styles.titleItem}>{item.title}</h4>
+               <p className={styles.descriptionItem}>{item.description}</p>
            </div>
      )
 } 
