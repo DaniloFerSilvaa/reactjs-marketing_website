@@ -2,9 +2,9 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { NotFound } from './pages/notFound';
-import { FeatureEsporte } from './pages/FeatureItem/FeatureEsporte';
+import { Phonenordeste } from './pages/FeatureItem/PhoneNordeste';
 import { NotebookNordeste } from './pages/FeatureItem/NotebookNordeste';
-import { PhoneNordeste } from './pages/FeatureItem/PhoneNordeste';
+import { HeadsetNordeste } from './pages/FeatureItem/HeadsetNordeste';
 import { ContactUs } from './pages/ContactUs';
 
 
@@ -14,8 +14,8 @@ function App() {
     <div>
           <Routes>
                <Route path='/' element={<Home/>   } /> 
-               <Route path='/feature/phone-nordeste' element={<PhoneNordeste/>}/>
-               <Route path='/feature/Psicologia-do-esporte' element={<FeatureEsporte/>}/>
+               <Route path='/feature/headset-nordeste' element={<HeadsetNordeste/>}/>
+               <Route path='/feature/phone-nordeste' element={<Phonenordeste/>}/>
                <Route path='/feature/notebook-nordeste' element={<NotebookNordeste/>}/>
                <Route path='/contactus' element={<ContactUs/>}/>
                <Route path='*' element={<NotFound/>} />

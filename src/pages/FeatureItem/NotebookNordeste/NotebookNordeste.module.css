@@ -1,5 +1,7 @@
 .mainNote{
-     background-color: aliceblue;
+     background: linear-gradient(225deg, rgba(222,189,203,1) 30%, #8fe3ff 50%);
+     padding: 25px 25px;
+     height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
